@@ -1,0 +1,27 @@
+{
+  "name": "warbonds",
+  "version": "1.0.0",
+  "description": "Calculate and display the current Warfront contribution quests from leasts to most expensive if all turn ins were purchased from the Auction House in World of Warcraft.",
+  "main": "./sripts.min.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "author": "jacobjdowning",
+  "license": "MIT",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
