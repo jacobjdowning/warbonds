@@ -22,4 +22,4 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
-src/js/keys.js
+/src/js/key.js
