@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import Layout from "./components/Layout"
 
 // Current Quests
-import quests from "./quests"
+var quests = [];
 
 const copperInGold = 10000;
 
@@ -86,16 +86,25 @@ function assignShare (bars) {
 function getAuctions(){
 	const battleNetUrl = "https://evening-chamber-17533.herokuapp.com/";
 	const corsAnywhereUrl = "https://fierce-plains-20744.herokuapp.com/"
+	const questsUrl = "https://jacobjdowning.github.io/warbonds/quests.json"
 	var check;
 
-	fetch(corsAnywhereUrl + battleNetUrl).
+	var questFetch = fetch(questsUrl).
+	then(data => data.json()).
+	then(parsed => quests = parsed);
+
+
+	var auctionFetch = fetch(corsAnywhereUrl + battleNetUrl).
 	then(data => data.json()).
 	then(response => response.files.pop().url). //Could be multiple, Promise.all is probably the right fix
 	then(newUrl => fetch(corsAnywhereUrl + newUrl, {
 			headers: new Headers({"origin" : "warbonds.github.io"})	
 	})).
-	then(response => response.json()).
-	then(ahDump => filterAuctions(ahDump.auctions)).
+	then(response => response.json());
+
+
+	Promise.all([questFetch, auctionFetch]).
+	then(ahDump => filterAuctions(ahDump[1].auctions)).
 	then(auctions => calcPrices(auctions)).
 	then(prices => createBars(prices, quests)).
 	then(bars => orderBars(bars)).
