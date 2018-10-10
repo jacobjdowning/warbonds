@@ -67,3 +67,8 @@ li {
 	padding: 5px;
 	margin: auto;
 }
+
+/* Remove wowhead icons in tooltips */
+.wowhead-tooltip p {
+	display: none;
+}

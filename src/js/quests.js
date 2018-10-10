@@ -1,29 +1,35 @@
 export default
-[
+[	
 	{
-		"itemID": "154166",
-		"itemName": "Coarse Leather Barding",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_leatherworking_coarseleatherbarding.jpg",
+		"itemID": "158203",
+		"itemName": "Incendiary Ammunition",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_eng_incendiaryammunition.jpg",
 		"count": "2"
 	},
 	{
-		"itemID": "152547",
-		"itemName": "Great Sea Catfish",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_fishing_greatseacatfish.jpg",
+		"itemID": "152812",
+		"itemName": "Monel-Hardened Hoofplates",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_blacksmith_leystonehoofplates.jpg",
+		"count": "2"
+	},
+	{
+		"itemID": "152509",
+		"itemName": "Siren's Pollen",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_herb_pollen.jpg",
 		"count": "60"
 	},
 	{
-		"itemID": "152494",
-		"itemName": "Coastal Healing Potion",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_alchemy_80_potion01red.jpg",
-		"count": "20"
+		"itemID": "153715",
+		"itemName": "Straddling Viridium",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_80_cutgem01_green.jpg",
+		"count": "15"
 	},
 	{
-		"itemID": "158202",
-		"itemName": "War-Scroll of Battle Shout ",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_inscription_80_warscroll_battleshout.jpg",
-		"count": "3"
-	},
+		"itemID": "154707",
+		"itemName": "Battle Flag: Spirit of Freedom",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/spell_tailor_ccreduce01.jpg",
+		"count": "1"
+	},	
 	{
 		"itemID": "153438",
 		"itemName": "Enchant Ring - Seal of Critical Strike",
@@ -31,27 +37,21 @@ export default
 		"count": "3"
 	},
 	{
-		"itemID": "153710",
-		"itemName": "Deadly Solstone",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_jewelcrafting_80_cutgem01_orange.jpg",
-		"count": "15"
-	},
-	{
-		"itemID": "158212",
-		"itemName": "Crow's Nest Scope",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_eng_crowsnestscope.jpg",
-		"count": "6"
-	},
-	{
-		"itemID": "152512",
-		"itemName": "Monelite Ore",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_ore_monalite.jpg",
+		"itemID": "152541",
+		"itemName": "Coarse Leather",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_skinning_80_coarseleather.jpg",
 		"count": "60"
 	},
 	{
-		"itemID": "154705",
-		"itemName": "Battle Flag: Rallying Swiftness",
-		"icon": "https://wow.zamimg.com/images/wow/icons/large/spell_tailor_mountspeedup01.jpg",
-		"count": "1"
+		"itemID": "158201",
+		"itemName": "War-Scroll of Intellect",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_inscription_80_warscroll_intellect.jpg",
+		"count": "3"
+	},
+	{
+		"itemID": "152547",
+		"itemName": "Great Sea Catfish",
+		"icon": "https://wow.zamimg.com/images/wow/icons/large/inv_fishing_greatseacatfish.jpg",
+		"count": "60"
 	}
 ]

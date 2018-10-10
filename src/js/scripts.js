@@ -5,7 +5,6 @@ import Layout from "./components/Layout"
 
 // Current Quests
 import quests from "./quests"
-import key from "./key"
 
 const copperInGold = 10000;
 
@@ -85,11 +84,11 @@ function assignShare (bars) {
 }
 
 function getAuctions(){
-	const battleNetUrl = "https://us.api.battle.net/wow/auction/data/dark-iron?locale=en_US&apikey=" + key;
+	const battleNetUrl = "https://evening-chamber-17533.herokuapp.com/";
 	const corsAnywhereUrl = "https://fierce-plains-20744.herokuapp.com/"
 	var check;
 
-	fetch(battleNetUrl).
+	fetch(corsAnywhereUrl + battleNetUrl).
 	then(data => data.json()).
 	then(response => response.files.pop().url). //Could be multiple, Promise.all is probably the right fix
 	then(newUrl => fetch(corsAnywhereUrl + newUrl, {
@@ -109,7 +108,3 @@ function getAuctions(){
 
 
 getAuctions();
-
-// const barlist = questsToBars(quests);
-// const app = document.getElementById('app');
-// ReactDOM.render(<Layout bars={barlist} />, app);
